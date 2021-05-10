@@ -6,27 +6,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 <body class="bg-light">
  
 <!-- navbar start -->
-<nav class="navbar navbar-light bg-light shadow-sm fixed-top">
-	<div class="container-lg">
-		<a href="#" class="navbar-brand text-danger fw-bold fs-4">India</a>
-	
-	<div class="dropdown">
-        <button class="btn btn-secondary btn-danger px-3" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-         <i class="fas fa-bars"></i>
-        </button>
-        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton">
-          <li><a class="dropdown-item" href="#home">Home</a></li>
-          <li><a class="dropdown-item" href="#about">About</a></li>
-          <li><a class="dropdown-item" href="#services">services</a></li>
-          <li><a class="dropdown-item" href="#work">Work</a></li>
-          <li><a class="dropdown-item" href="#contact">Contact</a></li>
-        </ul>
-    </div>
-    </div>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm fixed-top">
+  <div class="container-lg">
+     <a class="navbar-brand text-danger fw-bold fs-4" href="#">India</a>
+
+  
+  <button class="btn btn-secondary btn-danger px-3 d-md-none" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fas fa-bars"></i>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item active p-1">
+        <a class="nav-link text-danger fw-bold " href="#home">Home</a>
+      </li>
+      <li class="nav-item p-1">
+        <a class="nav-link text-danger fw-bold" href="#about">About</a>
+      </li>
+      <li class="nav-item p-1">
+        <a class="nav-link text-danger fw-bold" href="#services">What I Do</a>
+      </li>
+      <li class="nav-item p-1">
+        <a class="nav-link text-danger fw-bold" href="#freelancer">Freelancer</a>
+      </li>
+      <li class="nav-item p-1">
+        <a class="nav-link text-danger fw-bold"  href="#work">My Current work</a>
+      </li>
+      <li class="nav-item p-1">
+        <a class="nav-link text-danger fw-bold" href="#contact">Contact</a>
+      </li>
+     
+    </ul>
+  </div>
+  </div>
 </nav>
 
 <!-- navbar end -->
@@ -202,7 +219,7 @@
 <!-- service section end -->
 
 <!-- freelancer  available section start-->
-   <section class="freelancer-available py-5 bg-danger">
+   <section class="freelancer-available py-5 bg-danger" id="freelancer">
    	<div class="container-lg py-4">
    		<div class="row justify-content-center">
    			<div class="col-lg-8 text-center">
@@ -289,16 +306,16 @@
      			</div>
      		</div>
      		<div class="row">
-     			<div class="col-md-12 d-flex mb-5 align-items-center">
-     				<div class="col-md-4  contact-items d-flex mb-3">
+     			<div class="row d-flex mb-5 align-items-center">
+     				<div class="col-md-6 col-lg-4  contact-items d-flex mb-3">
      					<div class="icon fs-4 text-danger"><i class="fas fa-envelope"></i></div>
      					<div class="text ms-3">
      						<h3 class="fs-5">Email</h3>
-     						<a href="https://mail.sudiptibiswal@gmail.com/" class="text-decoration-none fs-5 text-dark m-0">mail.sudiptibiswal@gmail.com</a>
+     						<a href="https://mail.sudiptibiswal@gmail.com/" class="text-decoration-none  text-muted m-0">mail.sudiptibiswal@gmail.com</a>
      					</div>
      				</div>
 
-     				<div class="col-md-4 contact-items d-flex mb-3">
+     				<div class="col-md-6 col-lg-4 contact-items d-flex mb-3">
      					<div class="icon fs-4 text-danger"><i class="fas fa-phone"></i></div>
      					<div class="text ms-3">
      						<h3 class="fs-5">Phone</h3>
@@ -306,7 +323,7 @@
      					</div>
      				</div>
 
-     				<div class="col-md-4 contact-items d-flex">
+     				<div class="col-md-6 col-lg-4 contact-items d-flex">
      					<div class="icon fs-4 text-danger"><i class="fas fa-map-marker-alt"></i></div>
      					<div class="text ms-3">
      						<h3 class="fs-5">Location</h3>
@@ -314,8 +331,8 @@
      					</div>
      				</div>
      			</div>
-     			<div class="col-md-12 d-flex align-items-center">
-     			    <div class=" col-md-4 contact-items d-flex">
+     			<div class="row d-flex align-items-center text-center">
+     			    <div class=" col-sm-12 col-lg-4 contact-items d-flex">
      					<div class="icon fs-4 text-danger"><i class="fab fa-linkedin-in"></i></div>
      					<div class="text ms-3">
      						<h3>
@@ -323,7 +340,7 @@
      					</div>
      				</div>
 
-     				<div class="col-md-4 contact-items d-flex mb-3">
+     				<div class="col-sm-12 col-lg-4 contact-items d-flex mb-3">
      					<div class="icon fs-4 text-danger"><i class="fab fa-github"></i></div>
      					<div class="text ms-3">
      						
@@ -331,7 +348,7 @@
      					</div>
      				</div>
 
-     				<div class="col-md-4 contact-items d-flex">
+     				<div class="col-sm-12 col-lg-4 contact-items d-flex">
      					<div class="icon fs-4 text-danger"><i class=" fab fa-instagram"></i></div>
      					<div class="text ms-3">
      						<h3>
@@ -358,5 +375,8 @@
 
 <!-- footer end -->
 <script src="js/bootstrap.bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
